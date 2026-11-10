@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+{% load static %}
+
+{% block content %}
+
+    <h2>Register Here</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
+
+
+
+
+
+
+    
+    <img src="{% static 'images/rodrigo-porto-vfy71fExF7g-unsplash.jpg' %}" alt="Registration Image" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">    
+
+
+
+
+
+
+
+
+
+{% endblock %}
